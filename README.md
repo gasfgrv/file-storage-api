@@ -325,7 +325,7 @@ Para rodar os testes, rode os seguinte comandos
 - Spring Boot 3
 - Maven
 
-### Depedências:
+### Dependências:
 
 - spring data jpa
 - spring hateoas
