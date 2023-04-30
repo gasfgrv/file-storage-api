@@ -4,7 +4,6 @@ import com.github.gasfgrv.storage.exception.FileNotFoundException;
 import com.github.gasfgrv.storage.exception.StoreFileException;
 import com.github.gasfgrv.storage.model.FileDB;
 import com.github.gasfgrv.storage.repository.FilesRepository;
-import java.io.IOException;
 import java.util.Objects;
 import java.util.UUID;
 import java.util.stream.Stream;
@@ -25,8 +24,8 @@ public class FilesService implements IFilesService {
             var fileName = StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename()));
             var fileDB = new FileDB(UUID.randomUUID(), fileName, file.getContentType(), file.getBytes());
             return filesRepository.save(fileDB);
-        } catch (IOException exception) {
-            throw new StoreFileException(file.getOriginalFilename(), exception);
+        } catch (Exception exception) {
+            throw new StoreFileException(Objects.requireNonNullElse(file.getOriginalFilename(),"None"), exception);
         }
     }
 
