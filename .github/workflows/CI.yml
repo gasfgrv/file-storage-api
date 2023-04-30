@@ -30,3 +30,6 @@ jobs:
 
       - name: Run Tests
         run: mvn clean test
+
+      - name: Down database
+        run: docker compose down
