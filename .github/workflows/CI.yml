@@ -85,5 +85,5 @@ jobs:
         with:
           username: ${{env.DOCKERHUB_USERNAME}}
           password: ${{env.DOCKERHUB_TOKEN}}
-          repository: gustosilva/dsvendas-backend-java
+          repository: gustosilva/file-storage-api
           readme: "./README.md"
