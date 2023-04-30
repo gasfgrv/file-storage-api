@@ -299,6 +299,10 @@ Inicie a aplicação, pode ser pela IDE (Intellij ou Eclipse), ou rodando o segu
     -jar target/file-storage-api-0.0.1-SNAPSHOT.jar
 ```
 
+Use a collection para ajudar com os endpoints:
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=&uri=)
+
 ## Rodando os testes
 
 Para rodar os testes, rode os seguinte comandos
