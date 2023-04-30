@@ -9,7 +9,7 @@ on:
 env:
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-  BACKEND_TAG: gustosilva/file-storage-api:latest
+  API_TAG: gustosilva/file-storage-api:latest
 
 jobs:
   run-tests:
@@ -68,6 +68,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
+          context: .
           push: true
           tags: ${{ env.API_TAG }}
 
