@@ -1,0 +1,148 @@
+_type: export
+__export_format: 4
+__export_date: 2023-04-30T09:35:01.389Z
+__export_source: insomnia.desktop.app:v2022.4.0
+resources:
+  - _id: req_d5541d5608df49d58b4ad0b6248fdeb0
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682832278337
+    created: 1682792003873
+    url: http://localhost:8080/v1/files/upload
+    name: File Upload
+    description: ""
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_b5c9a0f3462c476fa8aa3fa6b12af21a
+          name: file
+          value: ""
+          description: ""
+          type: file
+          fileName: /home/gusta/Documentos/teste.txt
+          disabled: false
+        - id: pair_bfd61d852f3c452bbb1212801aebbf51
+          name: file
+          value: ""
+          description: ""
+          disabled: true
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+        id: pair_bdf66ff4e9de411194d2077b9a201df6
+    authentication: {}
+    metaSortKey: -1682792003873
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_7d5b1cd23b27439495e15fa8f495401b
+    parentId: null
+    modified: 1682791550376
+    created: 1682791550376
+    name: Local
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_a0ee97e9f3264af1a5cd0c5929f2e208
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682831823927
+    created: 1682791558170
+    url: http://localhost:8080/v1/files/info
+    name: Files Info
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_199ee8956238411eb3ba90f1ef441c06
+        name: Content-Type
+        value: application/json
+        description: ""
+      - id: pair_fe87980318e24795becfc0c381274596
+        name: Accept
+        value: application/json
+        description: ""
+    authentication: {}
+    metaSortKey: -1682791892447.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7bbbd70f8d2e4a98b69fc622490ca552
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682803191801
+    created: 1682803185303
+    url: http://localhost:8080/v1/files/ebeb9b08-9f10-45e4-bc43-0c38c0743959/details
+    name: File Detail
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682791836734.375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0d4ea9b8b8c64b96b698f6440564d97b
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682808914787
+    created: 1682792807698
+    url: http://localhost:8080/v1/files/8d358ff8-2cc1-4564-a534-1560d11ebf5c/download
+    name: File Download
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682791781021.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_67f8d97dbaa1ea30381319d4d280ad65d3d0c14b
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682791550382
+    created: 1682791550382
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1682791550382
+    _type: environment
+  - _id: jar_67f8d97dbaa1ea30381319d4d280ad65d3d0c14b
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682791550384
+    created: 1682791550384
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_e11d469e35284844b63f63a06c7f4bbd
+    parentId: wrk_7d5b1cd23b27439495e15fa8f495401b
+    modified: 1682791550377
+    created: 1682791550378
+    fileName: Local
+    contents: ""
+    contentType: yaml
+    _type: api_spec
