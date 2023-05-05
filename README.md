@@ -256,7 +256,7 @@ components:
 
 ## Variáveis de Ambiente
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente
 
 - `DB_URL`: url de conexão com o banco de dados
 - `DB_USER`: usuário do banco de dados
