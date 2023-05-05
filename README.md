@@ -8,10 +8,9 @@ API para upload e download de arquivos em uma base de dados.
 
 ## Funcionalidades
 
-- Download de ardquivos;
-- Upload de ardquivos até 200MB;
-- Detalhes de todas os arquivos;
-- E de um arquivo específico.
+- Download de arquivos;
+- Upload de arquivos até 200MB;
+- Detalhes de todos os arquivos ou de um arquivo específico.
 
 ## Documentação da API
 
